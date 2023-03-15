@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(/src/components/images/download\ \(1\).jpg);
+  position: relative;
+}
+.body::before{
+  position: absolute;
+  content: '';
+  background-image: linear-gradient(to right, rgba(19, 39, 218, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95))!important;
+  width: 100%;
+  height: 100%;
 }
 
 code {

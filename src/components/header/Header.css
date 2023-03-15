@@ -1,0 +1,10 @@
+.nav-link:hover{
+    color: rgb(146, 0, 0) !important;
+}
+.active{
+    color: aqua !important;
+}
+.navbar{
+    background: rgba(43, 35, 35, 0.5);
+    
+}
