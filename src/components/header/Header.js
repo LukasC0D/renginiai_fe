@@ -43,7 +43,7 @@ const Header = () => {
                   <NavLink className={({ isActive }) =>
                     isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
                   }
-                    to="/countries">
+                    to="/renginiai">
                     <div className='mt-1'>Renginiai</div>
                   </NavLink>
                 </li>
@@ -51,7 +51,7 @@ const Header = () => {
                   <NavLink className={({ isActive }) =>
                     isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
                   }
-                    to="/hotels">
+                    to="/">
                     <div className='mt-1'>?</div>
                   </NavLink>
                 </li>
@@ -59,7 +59,7 @@ const Header = () => {
                   <NavLink className={({ isActive }) =>
                     isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
                   }
-                    to="/orders">
+                    to="/">
                     <div className='mt-1'>?</div>
                   </NavLink>
                 </li>
