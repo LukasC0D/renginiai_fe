@@ -7,7 +7,7 @@ const Home = () => {
     <>
       {!auth.isLoggedin() ? (
         <>
-          <h3 className='text-center pt-5 text-white'>
+          <h3 className='text-center pt-5 text-white position-relative'>
             <div>Sveiki</div><br /><div>Pirmiausia užsiregistruokite</div>
           </h3>
         </>

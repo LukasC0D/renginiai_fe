@@ -5,7 +5,8 @@ import Header from './components/header/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
-import logo from './logo.svg'
+import logo from './components/images/react-native-firebase-1.svg'
+import logo1 from './components/images/laravel-2.svg'
 
 function App() {
   return (
@@ -24,9 +25,14 @@ function App() {
         </div>
       </AuthProvider>
     </BrowserRouter>
-<div>
-<img src={logo} className="App-logo" alt="logo" />
-</div>
+    
+    <div>
+    <img src={logo} className="App-logo" alt="logo" />
+    </div>
+    <div>
+    <img src={logo1} className="App-lara" alt="logo" />
+    </div>
+  
 </>
   );
 }

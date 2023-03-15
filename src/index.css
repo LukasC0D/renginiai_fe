@@ -5,18 +5,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(/src/components/images/download\ \(1\).jpg);
-  position: relative;
+  background-image: url(/src/components/images/download\ \(1\).jpg); 
 }
-.body::before{
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+body::before{
   position: absolute;
   content: '';
-  background-image: linear-gradient(to right, rgba(19, 39, 218, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95))!important;
+   background-color: rgba(0, 47, 255, 0.116);
+  /* background-image: linear-gradient(to right, rgba(19, 39, 218, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95)); */
   width: 100%;
   height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

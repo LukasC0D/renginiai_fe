@@ -1,13 +1,8 @@
-
-.App {
-  text-align: center;
-}
-
 .App-logo {
-    height: 17vmin;
+    height: 10vmin;
     position: fixed;
-    top: 82.5%;
-    left: 42%;
+    top: 85%;
+    left: 32%;
     transform: translate(-50%, -50%)
 }
 
@@ -17,12 +12,7 @@
   }
 }
 
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes  App-logo-spin{
   from {
     transform: rotate(0deg);
   }
@@ -30,3 +20,19 @@
     transform: rotate(360deg);
   }
 }
+.App-lara{
+    height: 10vmin;
+    position: fixed;
+    top: 85%;
+    right: 32%;
+    transform: translate(-50%, -50%)
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-lara {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+
+
