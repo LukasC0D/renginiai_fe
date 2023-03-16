@@ -7,6 +7,9 @@ import Login from './components/Login';
 import Register from './components/Register';
 import logo from './components/images/react-native-firebase-1.svg'
 import logo1 from './components/images/laravel-2.svg'
+import Events from './components/event/Events';
+import Event from './components/event/Event';
+
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login/>} />
             <Route path="/register" element={<Register />} />
+            <Route path="/events" element={<Events/>} />
+            <Route path="/event/create" element={<Event/>} />
        
           </Routes>
         </div>

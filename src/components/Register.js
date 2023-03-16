@@ -27,7 +27,7 @@ const Register = () => {
 	};
 	return (
 		<div className="d-flex aligns-items-center justify-content-center mt-5">
-			<div className="card w-50" style={{background:"rgba(43, 35, 35, 0.7)", color:'white'}}>
+			<div className="card w-50" style={{background:"rgba(43, 35, 35, 0.5)", color:'white'}}>
 				<div className="card-header">Registruotis</div>
 				<div className="card-body">
 					<div className="text-danger">{err?.message}</div>

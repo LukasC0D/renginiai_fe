@@ -31,7 +31,7 @@ const Header = () => {
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <NavLink className={({ isActive }) =>
-                isActive ? "nav-link active bg-danger bg-danger rounded" : "nav-link text-white"
+                isActive ? "nav-link active color rounded" : "nav-link text-white"
               }
                 to="/home">
                 <div className='mt-1'>Pagrindinis</div>
@@ -41,15 +41,15 @@ const Header = () => {
               <>
                 <li className="nav-item">
                   <NavLink className={({ isActive }) =>
-                    isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
+                    isActive ? "nav-link active color rounded" : "nav-link text-white"
                   }
-                    to="/renginiai">
+                    to="/events">
                     <div className='mt-1'>Renginiai</div>
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className={({ isActive }) =>
-                    isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
+                    isActive ? "nav-link active color rounded" : "nav-link text-white"
                   }
                     to="/">
                     <div className='mt-1'>?</div>
@@ -57,7 +57,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink className={({ isActive }) =>
-                    isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
+                    isActive ? "nav-link active color rounded" : "nav-link text-white"
                   }
                     to="/">
                     <div className='mt-1'>?</div>
@@ -72,7 +72,7 @@ const Header = () => {
             <ul className="navbar-nav d-flex">
               <li className="nav-item">
                 <NavLink className={({ isActive }) =>
-                  isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
+                  isActive ? "nav-link active color rounded" : "nav-link text-white"
                 }
                   to="/login">
                   <div className='mt-1'>Prisijungti</div>
@@ -80,7 +80,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <NavLink className={({ isActive }) =>
-                  isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
+                  isActive ? "nav-link active color rounded" : "nav-link text-white"
                 }
                   to="/register">
                   <div className='mt-1'>Registruotis</div>
@@ -90,18 +90,20 @@ const Header = () => {
           ) : (
             <ul className="navbar-nav d-flex">
               <li className="nav-item">
-                <span className="nav-link mx-4 text-primary fw-bold fst-italic fs-5">{`Hello ${auth.getUser().name
+                <span className="nav-link mx-4 fw-bold fst-italic fs-5"
+                      style={{color:"rgba(255, 221, 31, 0.89)"}}
+                >{`Hello ${auth.getUser().name
                   }`}</span>
               </li>
               <li className="nav-item">
                 <NavLink
                   className={({ isActive }) =>
-                    isActive ? "nav-link active bg-danger rounded" : "nav-link text-white"
+                    isActive ? "nav-link active color rounded" : "nav-link text-white"
                   }
                   to="/login"
                   onClick={() => auth.logout()}
                 >
-                  <div className='ps-1 pe-1 fs-5'>Atsijungti</div>
+                  <div className='mt-1'>Atsijungti</div>
                 </NavLink>
               </li>
             </ul>
