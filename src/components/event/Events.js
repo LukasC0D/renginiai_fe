@@ -66,7 +66,8 @@ const Events = () => {
               <th>Data</th>
               <th>Aprašymas</th>
               <th>Renginio_vieta</th>
-              {auth.getRole() === 2 ? (
+              <th>User</th>
+              {auth.getRole() === 2 || auth.getRole() === 1 ? (
                 <th>
                   <span className="float-end mx-1">Veiksmai</span>
                 </th>) :
@@ -77,11 +78,12 @@ const Events = () => {
           <tbody>
             {posts.map((post) => (
               <tr key={post.id}>
-                <td>{post.id + ' ' + post.name}</td>
+                <td>{post.name}</td>
                 <td>{post.date}</td>
                 <td>{post.description}</td>
                 <td>{post.place}</td>
-                {auth.getRole() === 2 ? (
+                <td>{post.user?.name}</td>
+                {auth.getRole() === 2 || auth.getRole() === 1 ? (
                   <>
                     <td className="col-lg-1">
                       <button
@@ -97,7 +99,7 @@ const Events = () => {
                 )}
               </tr>
             ))}
-            {auth.getRole() === 2 ? (
+            {auth.getRole() === 2 || auth.getRole() === 1 ? (
               <tr>
                 <td
                   colSpan="6"
