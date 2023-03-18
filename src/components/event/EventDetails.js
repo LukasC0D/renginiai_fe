@@ -23,7 +23,7 @@ const EventDetails = () => {
           <p>Data: {event.date}</p>
           <p>Aprašymas: {event.description}</p>
           <p>Vieta: {event.place}</p>
-          <p>Dalyviai: {event.name}</p>
+          <p>Dalyviai: {event.participant_name}</p>
           <p>Sukūrė id: {event.user_id}</p>
         </div>
       ))}
