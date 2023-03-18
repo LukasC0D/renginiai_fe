@@ -1,9 +1,5 @@
 .App-logo {
     height: 10vmin;
-    position: fixed;
-    top: 88%;
-    left: 32%;
-    transform: translate(-50%, -50%)
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,10 +18,6 @@
 }
 .App-lara{
     height: 10vmin;
-    position: fixed;
-    top: 88%;
-    right: 32%;
-    transform: translate(-50%, -50%)
 }
 
 @media (prefers-reduced-motion: no-preference) {

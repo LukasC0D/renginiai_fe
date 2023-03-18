@@ -5,11 +5,9 @@ import Header from './components/header/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
-import logo from './components/images/react-native-firebase-1.svg'
-import logo1 from './components/images/laravel-2.svg'
 import Events from './components/event/Events';
 import Event from './components/event/Event';
-
+import EventDetails from './components/event/EventDetails';
 
 function App() {
   return (
@@ -25,19 +23,11 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/events" element={<Events/>} />
             <Route path="/event/create" element={<Event/>} />
-       
+            <Route path="/event/:id" element={<EventDetails/>} />
           </Routes>
         </div>
       </AuthProvider>
     </BrowserRouter>
-    
-    <div>
-    <img src={logo} className="App-logo" alt="logo" />
-    </div>
-    <div>
-    <img src={logo1} className="App-lara" alt="logo" />
-    </div>
-  
 </>
   );
 }

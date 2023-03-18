@@ -14,7 +14,7 @@ const Header = () => {
         <NavLink className="navbar-brand" to="/home">
           <div
             className='fs-4'
-            style={{ color: '#fff' }}>DevOcean</div>
+            style={{ color: '#fff' }}>Project</div>
         </NavLink>
         <button
           className="navbar-toggler"
@@ -51,16 +51,8 @@ const Header = () => {
                   <NavLink className={({ isActive }) =>
                     isActive ? "nav-link active color rounded" : "nav-link text-white"
                   }
-                    to="/">
-                    <div className='mt-1'>?</div>
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className={({ isActive }) =>
-                    isActive ? "nav-link active color rounded" : "nav-link text-white"
-                  }
-                    to="/">
-                    <div className='mt-1'>?</div>
+                    to="/event">
+                    <div className='mt-1'>Info</div>
                   </NavLink>
                 </li>
               </>

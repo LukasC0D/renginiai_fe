@@ -10,23 +10,39 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
  
 }
-
 .footer {
-  width: 100%;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  height: 105px;
+  color: #fff;
+}
+.content {
+  margin-bottom: 100px; 
 }
 
-body::before{
+.text-centerr {
+  margin: auto;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* body::before{
   position: absolute;
   content: '';
   background-color: rgba(38, 0, 255, 0.116);
   width: 100%;
   height: 100%;
-}
+} */
 .color{
   background-color: rgba(86, 74, 253, 0.507);
 }

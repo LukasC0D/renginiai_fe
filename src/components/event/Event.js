@@ -64,12 +64,12 @@ const Event = () => {
   } else {
     return (
       <div className="d-flex aligns-items-center justify-content-center mt-5" >
-        <div className="card w-50" style={{background:"rgba(43, 35, 35, 0.5)", color:'white'}}>
+        <div className="card w-50" style={{ background: "rgba(43, 35, 35, 0.5)", color: 'white' }}>
           <div className="card-header text-white">
             Sukurti renginį
           </div>
           <div className="card-body" >
-            <form onSubmit={(e) => (id , createItem(e))}>
+            <form onSubmit={(e) => (id, createItem(e))}>
               <div className="my-2 text-danger">
                 {status === null ? "" : status.message}
               </div>
