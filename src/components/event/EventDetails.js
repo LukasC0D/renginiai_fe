@@ -9,7 +9,7 @@ const EventDetails = () => {
     async function fetchEvents() {
       const response = await fetch(`http://localhost:8000/api/event-user/${id}/`);
       const data = await response.json();
-      setEvents(data);
+      setEvents([data]);
     }
     fetchEvents();
   }, [id]);
@@ -23,7 +23,7 @@ const EventDetails = () => {
           <p>Data: {event.date}</p>
           <p>Aprašymas: {event.description}</p>
           <p>Vieta: {event.place}</p>
-          <p>Dalyviai: {event.participant_name}</p>
+          <p>Dalyviai: {event.participant_names}</p>
           <p>Sukūrė id: {event.user_id}</p>
         </div>
       ))}
